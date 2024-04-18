@@ -3,13 +3,6 @@
 using namespace std;
 
 class Car {
-private:
-    int m_MaxSeating;
-    int m_price;
-    void m_UpdatePrice(int base = 500000) {
-        m_price = m_MaxSeating * base;
-    }
-
 public:
     string m_brand;
     string m_model;
@@ -19,16 +12,6 @@ public:
         m_brand = x;
         m_model = y;
         m_year = z;
-        m_MaxSeating = s;
-        m_UpdatePrice();
-    }
-    
-    int get_MaxSeating() {
-        return m_MaxSeating;
-    }
-    
-    int get_Price() {
-        return m_price;
     }
 };
 
